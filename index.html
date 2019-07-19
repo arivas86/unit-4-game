@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Star Wars with jQuery!</title>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	</head>
+
+	<body>
+
+		<div class="title">
+            <h1>Star Wars Game</h1>
+        </div>
+		<div id="main-game-section">
+			<!-- render charachers to chose. -->
+			<div id="fighterSec">
+				<div class="header"><h2>Choose Your Fighter!</h2></div>
+            </div>
+            
+			<div id="enemySec" >
+				<div class="header"><h2>Remaining Oponents</h2></div>
+            </div>
+            
+		    <div class="row">
+			<!-- render player 1. -->
+			    <div id="player1" class="col-sm-6">
+				<div class="header">
+                    <h3>Your Fighter</h3>
+                </div>
+				<div id="selected-character"></div>
+			</div>  
+
+			<div id="action" class="col-sm-6">
+				<div class="oponentSec">
+					<div class="header">
+                        <h3>Oponent</h3>
+                    </div>
+					<!-- render chosen enemy. -->
+					<div id="defender"></div>
+				</div>
+            </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-sm-12">
+			    <div class="title">
+                    <h3>Fight Section</h3>
+                </div>
+			    <div id="fight-section">
+				    <button id="attack-button" class="btn btn-danger btn-lg">ATTACK!</button>
+			    </div>
+            </div>
+		</div>
+        <!-- display game messages. -->
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div id="game-message" class="col-sm-4"><h2></h2></div>
+            <div class="col-sm-4"></div>
+        </div>
+	</body>
+
+</html>

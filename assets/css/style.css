@@ -1,0 +1,112 @@
+body {
+    background-image: url("../images/star-wars.jpg");
+    background-size: 100%;
+    }
+
+h1, h2, h3{
+    color: white;
+    }
+  
+img {
+    width: 150px;
+    height: 100%;
+    border-radius: 10px;
+    }
+  
+.header {
+    font-size: 200%;
+    }
+  
+.title {
+    font-size: 300%;
+    text-align: center;
+    margin: 30px;
+    }
+  
+.character {
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    border-color: green;
+    border-style: solid;
+    border-width: 3px;
+    margin: 10px;
+    }
+
+#enemySec .character {
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(252, 252, 252);
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    }
+
+#action .character {
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(236, 10, 10);
+    border-color: rgb(78, 4, 4);
+    border-style: solid;
+    border-width: 5px;
+    }
+
+#player1 .character {
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(53, 182, 233);
+    border-color: rgb(42, 236, 116);
+    border-style: solid;
+    border-width: 5px;
+    }
+.char-img {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    }
+  
+.char-name {
+    text-align: center;
+    }
+  
+.char-hp {
+    text-align: center;
+    }
+  
+#selected-character {
+    width: 190px;
+    height: px;
+    }
+  
+#attacker {
+    width: 190px;
+
+    }
+  
+#defender {
+    width: 190px;
+    height: 160px;
+    }
+  
+#defender-name {
+    text-align: center;
+    }
+  
+#defender-health {
+    text-align: center;
+    }
+  
+    #restart-button {
+    visibility: hidden;
+    }
+
+#game-message{
+    background-color: brown;
+    width: 50%;
+    align-content: center;
+    opacity: 50%;
+    text-align: center;
+    font-size: 150%;
+    }
+ 
