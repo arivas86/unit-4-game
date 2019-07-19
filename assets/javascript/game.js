@@ -82,7 +82,7 @@ $(document).ready(function() {
             }
             // Hide the character select div.
             $("#fighterSec").hide();
-            updateCharacter(attacker, "#selected-character");
+            updateCharacter(attacker, "#fighter1");
             renderEnemies(fighters);
         }
     });
@@ -150,12 +150,12 @@ $(document).ready(function() {
                     attacker.health -= oponent.enemyAtk;
     
                     // Render the player's updated character card.
-                    updateCharacter(attacker, "#selected-character");
+                    updateCharacter(attacker, "#fighter1");
     
                     // end game when HP drops to 0
                     if (attacker.health <= 0) {
                         clearMessage();
-                        restartGame("The force is not with you...GAME OVER!!!");
+                        restartGame("The force is not with you...\n\nGAME OVER!!!");
                         $("#attack-button").off("click");
                     }
                 }
@@ -173,7 +173,7 @@ $(document).ready(function() {
                 if (wins >= fighters.length) {
                     clearMessage();
                     $("#attack-button").off("click");
-                    restartGame("THE FORCE IS STRONG WITH THIS ONE!!! GAME OVER");
+                    restartGame("THE FORCE IS STRONG WITH THIS ONE!!!\n\n GAME OVER");
                 }
             }
 
